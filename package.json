@@ -8,8 +8,7 @@
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-router": "^4.0.0",
-    "history": "^1.13.0"
+    "react-router-dom": "next"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,1 +1,25 @@
+foreground {
+  Punctuation: #E1EFFF;
+  Constant: #FF628C;
+  Entity: #FFDD00;
+  Keyword: #FF9D00;
+  Storage: #FFEE80;
+  String: #3AD900;
+  Comment: #0088FF;
+  Support: #80FFBB;
+  Variable: #CCCCCC;
+  Lang-Variable: #FF80E1;
+  Function-Call: #FFEE80;
+  Invalid: #F8F8F8;
+  Embedded-Source: #FFFFFF;
+  Entity-inherited-class: #80FCFF;
+  String-embedded-source: #9EFF80;
+  String-constant: #80FF82;
+  String-regexp: #80FFC2;
+  String-variable: #EDEF7D;
+  Support-function: #FFB054;
+  Support-constant: #EB939A;
+  Exception: #FF1E00;
+  
+}
 

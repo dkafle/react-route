@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Router, Route, IndexRoute, Link } from 'react-router'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import './App.css'
 import Home from './Home'
@@ -20,23 +20,32 @@ class App extends Component {
       })
     })
   }
-  render () {
-    var Child = Home
-    switch (this.state.route) {
-      case '/about': Child = About; break
-      case '/repos': Child = Repos; break
-      default: Child = Home
-    }
+  _renderMenu () {
     return (
       <div>
         <header><h2>Welcome to the Routing App</h2></header>
         <menu>
           <ul>
-            <li>Hello</li>
-            <li>hello</li>
+            <li><Link to='/home'>Home</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/repos'>Repos</Link></li>
           </ul>
         </menu>
-        <Child />
+      </div>
+    )
+  }
+  render () {
+    return (
+      <div>
+        <Router>
+          <div>
+            {this._renderMenu()}
+            <Route path='/' component={Home} />
+            <Route path='/home' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/repos' component={Repos} />
+          </div>
+        </Router>
       </div>
     )
   }
