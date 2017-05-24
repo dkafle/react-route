@@ -5,6 +5,7 @@ import './App.css'
 import Home from './Home'
 import About from './About'
 import Repos from './Repos'
+import Others from './Others'
 
 class App extends Component {
   constructor () {
@@ -29,6 +30,7 @@ class App extends Component {
             <li><Link to='/home'>Home</Link></li>
             <li><Link to='/about'>About</Link></li>
             <li><Link to='/repos'>Repos</Link></li>
+            <li><Link to='/others'>Others</Link></li>
           </ul>
         </menu>
       </div>
@@ -44,6 +46,7 @@ class App extends Component {
             <Route path='/home' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/repos' component={Repos} />
+            <Route path='/others' component={Others} />
           </div>
         </Router>
       </div>
